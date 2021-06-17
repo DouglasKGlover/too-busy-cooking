@@ -1,0 +1,21 @@
+query latest3Recipes {
+  recipeCollection(limit: 3) {
+    items {
+      sys {
+        id
+      }
+      title
+      slug
+      description
+      imagesCollection(limit: 1) {
+        items {
+          title
+          description
+          thumbnail: url(
+            transform: { width: 500, height: 200, resizeStrategy: FILL }
+          )
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+query recipeBySlug($slug: String!) {
+  recipeCollection(where: { slug: $slug }, limit: 1) {
+    items {
+      sys {
+        id
+      }
+      title
+      description
+      imagesCollection {
+        items {
+          description
+          thumbnail: url(transform: { width: 500, height: 300 })
+          highRes: url(transform: { width: 1200, height: 650 })
+        }
+      }
+      ingredientsCollection {
+        items {
+          amount
+          type
+          ingredient {
+            title
+          }
+        }
+      }
+      steps
+    }
+  }
+}
