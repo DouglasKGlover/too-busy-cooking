@@ -51,11 +51,11 @@
         <h2>Steps</h2>
       </div>
       <div class="col-md">
-        <ul>
+        <ol>
           <li v-for="step in recipe.steps">
             {{ step }}
           </li>
-        </ul>
+        </ol>
       </div>
     </div>
   </main>
