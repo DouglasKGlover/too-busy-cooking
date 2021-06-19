@@ -77,7 +77,7 @@ export default {
   },
   head() {
     return {
-      title: "Too busy cooking " + this.recipe.title,
+      title: "Too Busy Cooking " + this.recipe.title,
       meta: [
         {
           hid: "description",

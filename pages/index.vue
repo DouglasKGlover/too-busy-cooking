@@ -30,7 +30,7 @@ export default {
   },
   head() {
     return {
-      title: "Too busy cooking",
+      title: "Too Busy Cooking",
     };
   },
 };
