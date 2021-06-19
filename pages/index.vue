@@ -28,6 +28,11 @@ export default {
     const latestRecipes = await $graphql.default.request(query);
     return { latestRecipes };
   },
+  head() {
+    return {
+      title: "Too busy cooking",
+    };
+  },
 };
 </script>
 

@@ -75,6 +75,18 @@ export default {
     recipe = recipe.recipeCollection.items[0];
     return { recipe };
   },
+  head() {
+    return {
+      title: "Too busy cooking " + this.recipe.title,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: this.recipe.description,
+        },
+      ],
+    };
+  },
 };
 </script>
 
