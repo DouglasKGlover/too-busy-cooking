@@ -1,0 +1,11 @@
+query allRecipes {
+  recipeCollection {
+    items {
+      sys {
+        id
+      }
+      title
+      slug
+    }
+  }
+}
