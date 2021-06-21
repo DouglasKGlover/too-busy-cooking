@@ -36,7 +36,10 @@
       </div>
       <div class="col-md">
         <ul>
-          <li v-for="ingredient in recipe.ingredientsCollection.items">
+          <li
+            v-for="ingredient in recipe.ingredientsCollection.items"
+            class="mb-3"
+          >
             {{ ingredient.amount }} {{ ingredient.type }}
             {{ ingredient.ingredient.title }}
           </li>
@@ -51,11 +54,10 @@
         <h2>Steps</h2>
       </div>
       <div class="col-md">
-        <ol>
-          <li v-for="step in recipe.steps">
-            {{ step }}
-          </li>
-        </ol>
+        <RecipeStep
+          v-for="(step, index) in recipe.steps"
+          :step="{ step, index }"
+        />
       </div>
     </div>
   </main>
