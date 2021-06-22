@@ -14,7 +14,10 @@
             <NuxtLink class="nav-link" to="/about">About</NuxtLink>
           </li>
           <li class="nav-item">
-            <NuxtLink class="nav-link" to="/recipes">Recipes</NuxtLink>
+            <NuxtLink class="nav-link" to="/recipes">My Recipes</NuxtLink>
+          </li>
+          <li class="nav-item">
+            <NuxtLink class="nav-link" to="/submit">Submit a Recipe</NuxtLink>
           </li>
         </b-navbar-nav>
       </b-collapse>

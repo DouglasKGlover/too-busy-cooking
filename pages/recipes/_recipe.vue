@@ -57,6 +57,7 @@
         <RecipeStep
           v-for="(step, index) in recipe.steps"
           :step="{ step, index }"
+          :key="'step-' + (index + 1)"
         />
       </div>
     </div>
