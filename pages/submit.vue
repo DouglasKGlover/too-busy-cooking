@@ -24,7 +24,12 @@
               <label for="submission-name" class="font-weight-bold"
                 >Name:</label
               >
-              <input type="text" class="form-control" id="submission-name" />
+              <input
+                type="text"
+                class="form-control"
+                id="submission-name"
+                name="submission-name"
+              />
             </div>
 
             <div class="form-group">
@@ -34,6 +39,7 @@
               <textarea
                 class="form-control"
                 id="submission-recipe"
+                name="submission-recipe"
                 rows="3"
                 required
               ></textarea>
@@ -43,12 +49,13 @@
               <div class="form-check">
                 <input
                   class="form-check-input"
+                  name="entry-confirm"
                   type="checkbox"
                   value=""
-                  id="defaultCheck1"
+                  id="entry-confirm"
                   required
                 />
-                <label class="form-check-label font-italic" for="defaultCheck1">
+                <label class="form-check-label font-italic" for="entry-confirm">
                   By checking this, you verify that you are submitting your own
                   recipe and not just copy-pasting from some random website or
                   something.
