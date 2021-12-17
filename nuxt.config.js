@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "too-busy-cooking",
+    title: "Too Busy Cooking",
     htmlAttrs: {
       lang: "en",
     },
