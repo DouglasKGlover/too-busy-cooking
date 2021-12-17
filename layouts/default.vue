@@ -2,7 +2,7 @@
   <div>
     <GlobalNav />
     <Nuxt />
-    <GlobalFooter />
+    <!-- <GlobalFooter /> -->
   </div>
 </template>
 
