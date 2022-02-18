@@ -1,15 +1,29 @@
 <template>
-  <main class="container" :key="recipe.sys.id">
+  <main
+    class="container"
+    :key="recipe.sys.id"
+    itemscope
+    itemtype="https://schema.org/Recipe"
+  >
     <div class="row">
       <div class="col-sm mb-4">
         <h1 class="title">I'm too busy cooking...</h1>
-        <h2 class="display-3">{{ recipe.title }}</h2>
+        <h2
+          class="display-3"
+          itemprop="name"
+          itemscope
+          itemtype="https://schema.org/Thing"
+        >
+          {{ recipe.title }}
+        </h2>
       </div>
     </div>
 
     <div class="row">
       <div class="col-md-6">
-        <p>{{ recipe.description }}</p>
+        <p itemprop="description" itemscope itemtype="https://schema.org/Thing">
+          {{ recipe.description }}
+        </p>
       </div>
     </div>
 
@@ -22,6 +36,7 @@
         :key="`recipe-image-${image.sys.id}`"
       >
         <img
+          itemprop="thumbnailUrl"
           :src="image.thumbnail"
           :alt="image.description"
           class="img-fluid bg-secondary"
