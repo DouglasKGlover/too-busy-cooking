@@ -31,7 +31,7 @@
         :key="`recipe-image-${image.sys.id}`"
       >
         <img
-          itemprop="thumbnailUrl"
+          itemprop="image"
           :src="image.thumbnail"
           :alt="image.description"
           class="img-fluid bg-secondary"
@@ -57,6 +57,7 @@
               handle="ingredient"
               :item="ingredient"
               :index="index"
+              itemprop="recipeIngredient"
             />
           </li>
         </ul>
@@ -79,6 +80,7 @@
               handle="direction"
               :item="direction"
               :index="index"
+              itemprop="step"
             />
           </li>
         </ol>
