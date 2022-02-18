@@ -15,7 +15,7 @@
     "contentful": "^9.1.10",
     "core-js": "^3.9.1",
     "graphql-tag": "^2.12.4",
-    "nuxt": "^2.15.3"
+    "nuxt": "^2.15.8"
   },
   "devDependencies": {
     "eslint-config-prettier": "^8.1.0",
