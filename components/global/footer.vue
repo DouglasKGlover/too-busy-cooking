@@ -3,7 +3,9 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <p class="text-right">&copy; {{ currentYear }} Douglas Glover</p>
+          <p class="text-right text-small">
+            <i>Doug Glover {{ currentYear }}</i>
+          </p>
         </div>
       </div>
     </div>

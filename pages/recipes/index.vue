@@ -10,13 +10,15 @@
 
       <div class="row">
         <div class="col">
-          <ol>
-            <li v-for="recipe in recipes" :key="recipe.sys.id">
-              <NuxtLink :to="'/recipes/' + recipe.slug">{{
-                recipe.title
-              }}</NuxtLink>
-            </li>
-          </ol>
+          <div class="list-group">
+            <NuxtLink
+              v-for="recipe in recipes"
+              :to="'/recipes/' + recipe.slug"
+              :key="recipe.sys.id"
+              class="list-group-item list-group-item-action"
+              >{{ recipe.title }}</NuxtLink
+            >
+          </div>
         </div>
       </div>
     </div>
@@ -48,4 +50,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+/* ul {
+  list-style-type: none;
+} */
+</style>

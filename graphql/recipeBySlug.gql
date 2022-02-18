@@ -8,21 +8,16 @@ query recipeBySlug($slug: String!) {
       description
       imagesCollection {
         items {
+          sys {
+            id
+          }
           description
-          thumbnail: url(transform: { width: 500, height: 300 })
+          thumbnail: url(transform: { width: 350, height: 210, resizeStrategy: FILL, quality: 75 })
           highRes: url(transform: { width: 1200, height: 650 })
         }
       }
-      ingredientsCollection {
-        items {
-          amount
-          type
-          ingredient {
-            title
-          }
-        }
-      }
-      steps
+      ingredientsList
+      directions
     }
   }
 }

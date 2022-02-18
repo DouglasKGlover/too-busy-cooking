@@ -1,5 +1,5 @@
 query latest3Recipes {
-  recipeCollection(limit: 3) {
+  recipeCollection(limit: 3, order: sys_firstPublishedAt_DESC) {
     items {
       sys {
         id
@@ -12,7 +12,7 @@ query latest3Recipes {
           title
           description
           thumbnail: url(
-            transform: { width: 500, height: 200, resizeStrategy: FILL }
+            transform: { width: 500, height: 200, resizeStrategy: FILL, quality: 50 }
           )
         }
       }

@@ -19,11 +19,14 @@
       <div
         class="col-sm-6 col-md-4"
         v-for="image in recipe.imagesCollection.items"
+        :key="`recipe-image-${image.sys.id}`"
       >
         <img
           :src="image.thumbnail"
           :alt="image.description"
-          class="img-fluid"
+          class="img-fluid bg-secondary"
+          width="350"
+          height="210"
         />
       </div>
     </div>
@@ -37,11 +40,14 @@
       <div class="col-md">
         <ul>
           <li
-            v-for="ingredient in recipe.ingredientsCollection.items"
-            class="mb-3"
+            v-for="(ingredient, index) in recipe.ingredientsList"
+            :key="`ingredient-${index + 1}`"
           >
-            {{ ingredient.amount }} {{ ingredient.type }}
-            {{ ingredient.ingredient.title }}
+            <ChecklistItem
+              handle="ingredient"
+              :item="ingredient"
+              :index="index"
+            />
           </li>
         </ul>
       </div>
@@ -51,14 +57,21 @@
 
     <div class="row">
       <div class="col-md-3">
-        <h2>Steps</h2>
+        <h2>Directions</h2>
       </div>
       <div class="col-md">
-        <RecipeStep
-          v-for="(step, index) in recipe.steps"
-          :step="{ step, index }"
-          :key="'step-' + (index + 1)"
-        />
+        <ol>
+          <li
+            v-for="(direction, index) in recipe.directions"
+            :key="`direction-${index + 1}`"
+          >
+            <ChecklistItem
+              handle="direction"
+              :item="direction"
+              :index="index"
+            />
+          </li>
+        </ol>
       </div>
     </div>
   </main>
@@ -93,4 +106,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+ul {
+  list-style-type: none;
+}
+</style>

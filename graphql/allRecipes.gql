@@ -1,5 +1,5 @@
 query allRecipes {
-  recipeCollection {
+  recipeCollection(order:title_ASC) {
     items {
       sys {
         id
