@@ -26,4 +26,12 @@
 export default {};
 </script>
 
-<style></style>
+<style scoped>
+.nav-item.nav-item.nav-item a {
+  color: rgba(255, 255, 255, 1);
+}
+
+.nav-item.nav-item.nav-item a:hover {
+  text-decoration: underline;
+}
+</style>
