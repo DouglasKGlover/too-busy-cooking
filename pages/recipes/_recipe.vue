@@ -8,12 +8,7 @@
     <div class="row">
       <div class="col-sm mb-4">
         <h1 class="title">I'm too busy cooking...</h1>
-        <h2
-          class="display-3"
-          itemprop="name"
-          itemscope
-          itemtype="https://schema.org/Thing"
-        >
+        <h2 class="display-3" itemprop="name">
           {{ recipe.title }}
         </h2>
       </div>
@@ -21,7 +16,7 @@
 
     <div class="row">
       <div class="col-md-6">
-        <p itemprop="description" itemscope itemtype="https://schema.org/Thing">
+        <p itemprop="description">
           {{ recipe.description }}
         </p>
       </div>
