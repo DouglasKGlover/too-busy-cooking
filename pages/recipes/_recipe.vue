@@ -86,6 +86,31 @@
         </ol>
       </div>
     </div>
+
+    <hr v-if="recipe.references" />
+
+    <div class="row references" v-if="recipe.references">
+      <div class="col">
+        <h2>References</h2>
+        <p>
+          This site is intended primarily as a collection of recipes I have
+          written, but it'd be the height of avarice for me to claim I've not
+          taken some "inspiration" from others. In the instances where
+          "inspiration" is more like "almost verbatim"<b>*</b>, I'll include
+          references here because I believe in giving credit where it's due.
+        </p>
+        <p>
+          <b>*</b>All of the words on this site are written by me, and all
+          images are my own.
+        </p>
+
+        <ol>
+          <li v-for="(ref, index) in recipe.references" :key="`ref-${index}`">
+            <a :href="ref" target="_blank">{{ ref }}</a>
+          </li>
+        </ol>
+      </div>
+    </div>
   </main>
 </template>
 
@@ -121,5 +146,14 @@ export default {
 <style scoped>
 ul {
   list-style-type: none;
+}
+
+.references h2 {
+  font-size: 1.2em;
+}
+
+.references p,
+.references li {
+  font-size: 0.8em;
 }
 </style>

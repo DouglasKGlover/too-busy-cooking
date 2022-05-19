@@ -18,6 +18,7 @@ query recipeBySlug($slug: String!) {
       }
       ingredientsList
       directions
+      references
     }
   }
 }
