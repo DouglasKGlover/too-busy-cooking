@@ -98,6 +98,8 @@
           taken some "inspiration" from others. In the instances where
           "inspiration" is more like "almost verbatim"<b>*</b>, I'll include
           references here because I believe in giving credit where it's due.
+          That said, clicking these links will probably take you to a world of
+          ads, tracking, etc. so clicker beware.
         </p>
         <p>
           <b>*</b>All of the words on this site are written by me, and all
