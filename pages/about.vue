@@ -25,17 +25,17 @@
       </div>
       <div class="col-md-8 col-lg-6">
         <p>
-          I'm sick of hearing peoples' life stories every time I want to cook
+          I don't need to read a life story every time I want to cook
           anything slightly more complicated than pancakes. Pair that with
-          endless ads and being tracked by every damn site on the internet, I
-          got kind of sick of the whole thing.
+          endless ads and being tracked by every site on the internet, I
+          wanted to have a space which catered to my needs without all the other stuff.
         </p>
         <p>So I made this site to put up recipes with <em>none</em> of that.</p>
         <ul>
           <li>No ads</li>
           <li>No analytics</li>
           <li>No affiliate links</li>
-          <li>No goddamn life story</li>
+          <li>No life story</li>
           <li>No cookies (except the good kind LOL BAKING JOKE)</li>
         </ul>
         <p>
