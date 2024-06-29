@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-sm">
         <h1 class="title">I'm too busy cooking.</h1>
-        <h2><small>Just recipes, no bullshit.</small></h2>
+        <h2><small>Just the recipes. No time to write novels about 'em.</small></h2>
       </div>
     </div>
 
